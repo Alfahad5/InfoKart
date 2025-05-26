@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+/* Ensure default pseudo-element styles don't interfere */
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+}
+
+/* Force arrows to be visible and styled as desired */
+.slick-prev,
+.slick-next {
+  z-index: 1000;
+  display: block !important;
+}
+
+/* Optional: Style the arrow buttons */
+.custom-arrow {
+  font-size: 2rem; /* Adjust size as needed */
+  color: #4B5563;  /* Tailwind's gray-600 */
+  cursor: pointer;
+}
+
+.slick-dots li button{
+  padding: 25px !important;
+}
+
+.bg-gray-900{
+  background-color: #4D4D4D !important;
+}
+
+.p-full{
+  padding-block: 100px;
+}
+
+.p-half{
+  padding-block: 75px !important;
+}
+
+.m-half{
+  margin-top: 18px;
+  margin-bottom: 65px;
+}
+
+.p-full2{
+  padding-top: 100px;
+  padding-bottom: 200px ;
+}
+
+.mx-full{ 
+  margin-inline: 135px !important ;
+}
+
+.banner-h{
+  width: 100% !important;
+  height: 200px;
+}
+
+/* .carousel-container ul li{
+  width: 100% !important;
+} */
