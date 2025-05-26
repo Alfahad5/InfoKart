@@ -56,7 +56,6 @@ This is a full-stack **MERN E-Commerce Web Application** built with **Tailwind C
 - 🌍 **Express.js** – Backend framework.
 - 🛡️ **JWT Authentication** – Secure user authentication.
 - 🔐 **Bcrypt.js** – Password hashing.
-- 📂 **Multer** – File uploads.
 - 🗄️ **MongoDB & Mongoose** – Database management.
 - 🌐 **CORS & Cookie-parser** – Security & sessions.
 
@@ -70,6 +69,23 @@ This is a full-stack **MERN E-Commerce Web Application** built with **Tailwind C
 - 🎠 **React-Slick & Multi-Carousel** – Product carousels.
 
 ## 📜 Dependencies
+
+🗄️ Database – MongoDB Atlas
+This project uses MongoDB Atlas as its cloud database, with the following 9 collections critical for full functionality:
+
+📁 Collection Name 📋 Purpose
+cart- Stores user cart items before checkout.
+categories- Contains product categories for filtering and browsing.
+footerabouts- Content shown in the “About” section of the footer.
+footerhelppolicies- Policies and help links displayed in the footer.
+footermailus- Contact or support email-related data in the footer.
+footerpolicies- Additional policy links for footer display.
+footersocials- Social media links shown in the footer.
+headerwidgets- Dynamic widgets or links shown in the website header.
+products- Main product data including title, price, category, and image.
+users- Stores user authentication and profile information.
+
+💡 All of these collections are stored in the test cluster under the infokart database on MongoDB Atlas. Make sure your .env file has the correct MONGO_URL string pointing to your cluster.
 
 ### **Backend**
 
